@@ -45,16 +45,20 @@ img {
 }
 .mainTittle, .go, .gameOverTittle, .repeat, .rules, .shortGame, .longGame, .exit, .count {
   display: block;
-  width: 300px;
   text-align: center;
   padding: 25px;
 }
+
+.rules {
+  display: none;
+}
+
 .mainTittle {
   font-size: 3em;
 }
 .go {
   top: 220px;
-  font-size: 4.2em;
+  font-size: 4em;
   color: red;
 }
 .go:hover, .shortGame:hover, .longGame:hover, .exit:hover {
@@ -66,18 +70,6 @@ img {
   font-size: 2em;
   color: red;
   display: none;
-}
-.shortGame {
-  top: 250px;
-}
-.longGame {
-  top: 300px;
-}
-.rules {
- top: 400px;
-}
-.exit {
-  bottom: -70px;
 }
 
 .gameDiv {

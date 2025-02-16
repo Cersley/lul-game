@@ -3,6 +3,7 @@ var leftSide = document.getElementById('leftSide');
 var rightSide = document.getElementById('rightSide');
 var body = document.getElementById('mainDiv');
 var start = document.getElementById('start');
+var rules = document.getElementById('gameRules');
 var startGame = document.getElementById('startGame');
 var shortGame = document.getElementById('shortGame');
 var longGame = document.getElementById('longGame');
@@ -53,6 +54,7 @@ var myGame = function() {
     startGame.style.display = 'none';
     shortGame.style.display = 'block';
     longGame.style.display = 'block';
+    rules.style.display = 'block';
   };
 
   shortGame.onclick = function() {
