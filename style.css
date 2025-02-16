@@ -1,4 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .rightSide, .leftSide {
+  visibility: hidden;
   width: 500px;
   height: 500px;
   position: absolute;
@@ -7,42 +15,41 @@
   left: 500px;
   border-left: 2px solid black;
 }
+
 img {
   position: absolute;
   z-index: 0;
 }
+
 .mainDiv, .start, .gameOver {
   width: 1000px;
   height: 500px;
 }
-.mainDiv{
-  z-index: 0;
+.mainDiv {
   border: 1px solid;
-  margin: 50px auto;
+  margin: 50px 50px auto;
   position: relative;
 }
 .start {
-  z-index: 1;
-  /*display: none;*/
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: yellow;
 }
+
 .imgStart {
-  position: absolute;
+  position: relative;
   width: 150px;
   height: 150px;
-  left: calc(50% - 75px);
-  top: 30px;
 }
 .mainTittle, .go, .gameOverTittle, .repeat, .rules, .shortGame, .longGame, .exit, .count {
-  position: absolute;
   display: block;
   width: 300px;
   text-align: center;
-  left: calc(50% - 150px);
+  padding: 25px;
 }
 .mainTittle {
-  top: 150px;
   font-size: 3em;
 }
 .go {
@@ -55,6 +62,7 @@ img {
   cursor: pointer;
 }
 .shortGame, .longGame, .exit {
+  padding: 10px;
   font-size: 2em;
   color: red;
   display: none;
@@ -71,10 +79,16 @@ img {
 .exit {
   bottom: -70px;
 }
+
+.gameDiv {
+  display: flex;
+}
+
 .gameOver {
-  position: absolute;
   display: none;
-  /*z-index: 3;*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   animation: colorchange 1s;
   -webkit-animation: colorchange 1s;
   background-color: black;
