@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lul Game</title>
+  <link rel="icon" type="image/x-icon" href="/lul-game/favicon.ico">
+  <link rel="stylesheet" href="/lul-game/style.css">
+  <meta property="og:title" content="Lul Game" />
+  <meta property="og:description" content="Шо ти? Хочеш залипнути?" />
+  <meta property="og:image" content="/lul-game/game-preview.jpg" />
+</head>
+<body onload="myGame()">
+  <div id="mainDiv" class="mainDiv">
+    <div id="leftSide" class="leftSide"></div>
+    <div id="rightSide" class="rightSide"></div>
+    <p class="exit" id="exit">Exit</p>
+    <div id="start" class="start">
+      <img src="/lul-game/smile.png" alt="start" class="imgStart">
+      <p class="mainTittle">Lul Game</p>
+      <p class="go" id="startGame">Start game</p>
+      <p class="shortGame" id="shortGame">Short game</p>
+      <p class="longGame" id="longGame">Long game</p>
+      <p class="rules">Клікай на <b>зайві</b> смайли <b>зліва</b></p>
+    </div>
+    <div id="gameOver" class="gameOver">
+      <p class="gameOverTittle">Game Over</p>
+      <p class="count" id="count">You went through <span id="f" class="f"></span> rounds </p>
+      <p class="repeat" id="tryAgain">Try again</p>
+    </div>
+  </div>
+  <script src="/lul-game/common.js"></script>
+</body>
+</html>

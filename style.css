@@ -1,0 +1,108 @@
+.rightSide, .leftSide {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+}
+.rightSide {
+  left: 500px;
+  border-left: 2px solid black;
+}
+img {
+  position: absolute;
+  z-index: 0;
+}
+.mainDiv, .start, .gameOver {
+  width: 1000px;
+  height: 500px;
+}
+.mainDiv{
+  z-index: 0;
+  border: 1px solid;
+  margin: 50px auto;
+  position: relative;
+}
+.start {
+  z-index: 1;
+  /*display: none;*/
+  position: absolute;
+  background-color: yellow;
+}
+.imgStart {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: calc(50% - 75px);
+  top: 30px;
+}
+.mainTittle, .go, .gameOverTittle, .repeat, .rules, .shortGame, .longGame, .exit, .count {
+  position: absolute;
+  display: block;
+  width: 300px;
+  text-align: center;
+  left: calc(50% - 150px);
+}
+.mainTittle {
+  top: 150px;
+  font-size: 3em;
+}
+.go {
+  top: 220px;
+  font-size: 4.2em;
+  color: red;
+}
+.go:hover, .shortGame:hover, .longGame:hover, .exit:hover {
+  color: blue;
+  cursor: pointer;
+}
+.shortGame, .longGame, .exit {
+  font-size: 2em;
+  color: red;
+  display: none;
+}
+.shortGame {
+  top: 250px;
+}
+.longGame {
+  top: 300px;
+}
+.rules {
+ top: 400px;
+}
+.exit {
+  bottom: -70px;
+}
+.gameOver {
+  position: absolute;
+  display: none;
+  /*z-index: 3;*/
+  animation: colorchange 1s;
+  -webkit-animation: colorchange 1s;
+  background-color: black;
+}
+@keyframes colorchange {
+  from {background: transparent}
+  to {background: black;}
+}
+.gameOverTittle {
+  top: 120px;
+  color: white;
+  font-size: 4em;
+}
+.repeat {
+  top: 220px;
+  color: red;
+  font-size: 3em;
+  font-weight: bold;
+}
+.repeat:hover {
+  cursor: pointer;
+  color: yellow;
+}
+.count {
+  top: 320px;
+  color: white;
+  font-size: 1.2em;
+}
+.f {
+  color: yellow;
+}
